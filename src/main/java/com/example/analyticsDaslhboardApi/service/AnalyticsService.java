@@ -6,6 +6,7 @@ import com.example.analyticsDaslhboardApi.dto.TopProductDto;
 import com.example.analyticsDaslhboardApi.repository.OrderRepository;
 import com.example.analyticsDaslhboardApi.repository.UserRepository;
 import lombok.RequiredArgsConstructor;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
@@ -56,6 +57,6 @@ public class AnalyticsService {
     }
 
     public List<TopProductDto> getTop5OrderedProduct(){
-        return orderRepository.getTop5Product();
+        return orderRepository.getTop5Product(PageRequest.of(0 ,5));
     }
 }

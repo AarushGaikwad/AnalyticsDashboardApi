@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class AnalyticsDaslhboardApiApplication {
+public class AnalyticsDashboardApiApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(AnalyticsDaslhboardApiApplication.class, args);
+		SpringApplication.run(AnalyticsDashboardApiApplication.class, args);
 	}
 
 }
